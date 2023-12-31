@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for Hoor</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            background: linear-gradient(to right, #ff85a2, #ffb6c1);
+            margin: 50px;
+            color: #333;
+        }
+        #message {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff5370;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        button {
+            background-color: #ff5370;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        #gifContainer {
+            display: none;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="message">
+    <h1>Happy 7 Months, Hoor!</h1>
+    <p>On this special day, I want to take a moment to express my deepest feelings for you, my beautiful Hoor. You are the embodiment of elegance, grace, and pure radiance.</p>
+    <p>Seven months together have been nothing short of magical. Your presence fills my days with joy and my heart with love. You are someone any man dreams of, and I feel incredibly fortunate to call you mine.</p>
+    <p>Your beauty is beyond compare, and your kindness knows no bounds. I want to apologize if I've ever caused you any distress. I cherish every moment we share and am committed to making our journey together even more amazing.</p>
+    <button onclick="showGif()">Click for a Surprise Gif!</button>
+    <div id="gifContainer"></div>
+</div>
+
+<script>
+    function showGif() {
+        var gifContainer = document.getElementById('gifContainer');
+        gifContainer.innerHTML = '<img src="https://tenor.com/view/puuung-kiss-date-vacation-love-gif-13826658.gif" alt="Love Gif">';
+        setTimeout(function() {
+            gifContainer.style.display = 'block';
+        }, 10);
+        var button = document.querySelector('button');
+        button.textContent = 'Surprise Revealed!';
+        button.disabled = true;
+    }
+</script>
+
+</body>
+</html>
